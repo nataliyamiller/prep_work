@@ -1,0 +1,14 @@
+def longest_word(sentense)
+a = sentense.split(" ")
+if (a.length==1)
+  return a
+elseif (a[0].length > a[1].length && a[0].length > a[2].length)
+	return a[0]
+elseif (a[1] > a[0] && a[1] > a[2])
+	return a[1]
+else
+	return a[2]
+end
+end
+
+puts(longest_word("hello world helliosll"))
