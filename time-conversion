@@ -1,0 +1,13 @@
+def time_conversion(minutes)
+  if minutes<60
+    return "0:"+minutes.to_s
+  else
+    a=minutes/60
+    b=minutes%60
+      if b!=0
+        return a.to_s+":"+b.to_s
+      else
+        return a.to_s+":"+b.to_s+"0"
+      end
+  end
+end
