@@ -1,0 +1,13 @@
+def palindrome?(string)
+	i=0
+	second_string=""
+	while i<string.length
+		second_string=string[i]+second_string
+		i=i+1	
+	end
+	if string==second_string
+		return true
+	else
+		return false
+	end
+end
